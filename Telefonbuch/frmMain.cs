@@ -13,6 +13,13 @@ namespace Telefonbuch
     public partial class frmMain : Form
     {
         Image iContactImg;
+        string sNumberType1 = "";
+        string sNumberType2 = "";
+        string sNumberType3 = "";
+        string sNumberType4 = "";
+        string sMailType1 = "";
+        string sMailType2 = "";
+        string sShowAsType = "NV";
 
         public frmMain()
         {
@@ -43,18 +50,23 @@ namespace Telefonbuch
             {
                 case 0:
                     this.labExample.Text = "Beispiel: " + this.tbNachname.Text + ", " + this.tbVorname.Text;
+                    sShowAsType = "NV";
                     break;
                 case 1:
                     this.labExample.Text = "Beispiel: " + this.tbVorname.Text + " " + this.tbNachname.Text;
+                    sShowAsType = "VN";
                     break;
                 case 2:
                     this.labExample.Text = "Beispiel: " + this.tbNachname.Text + ", " + this.tbVorname.Text+" ("+this.tbNickname.Text+")";
+                    sShowAsType = "NVS";
                     break;
                 case 3:
                     this.labExample.Text = "Beispiel: " + this.tbTitel.Text + " " + this.tbNachname.Text;
+                    sShowAsType = "TVN";
                     break;
                 default:
                     this.labExample.Text = "Beispiel: " + this.tbNachname.Text + ", " + this.tbVorname.Text;
+                    sShowAsType = "NV";
                     break;
             }
         }
@@ -77,6 +89,108 @@ namespace Telefonbuch
             else
             {
                 this.pbContact.Image = Telefonbuch.Properties.Resources.g12_photos2_97346;
+            }
+        }
+
+        // Comboboxes auswerten
+        private void cBoxesChanged(object sender, EventArgs e)
+        {
+            ComboBox cBox = new ComboBox();
+            cBox = (ComboBox)sender;
+
+            switch (cBox.Name)
+            {
+                case "cobNr1":
+                    if (cBox.SelectedIndex == -1)
+                    {
+                        sNumberType1 = "";
+                    }
+                    else
+                    {sNumberType1 = cBox.SelectedItem.ToString(); }
+                    break;
+                case "cobNr2":
+                    if (cBox.SelectedIndex == -1)
+                    {
+                        sNumberType2 = "";
+                    }
+                    else
+                    { sNumberType2 = cBox.SelectedItem.ToString(); }
+                    break;
+                case "cobNr3":
+                    if (cBox.SelectedIndex == -1)
+                    {
+                        sNumberType3 = "";
+                    }
+                    else
+                    { sNumberType3 = cBox.SelectedItem.ToString(); }
+                    break;
+                case "cobNr4":
+                    if (cBox.SelectedIndex == -1)
+                    {
+                        sNumberType4 = "";
+                    }
+                    else
+                    { sNumberType4 = cBox.SelectedItem.ToString(); }
+                    break;
+                case "cobMail1":
+                    if (cBox.SelectedIndex == -1)
+                    {
+                        sMailType1 = "";
+                    }
+                    else
+                    { sMailType1 = cBox.SelectedItem.ToString(); }
+                    break;
+                case "cobMail2":
+                    if (cBox.SelectedIndex == -1)
+                    {
+                        sMailType2 = "";
+                    }
+                    else
+                    { sMailType2 = cBox.SelectedItem.ToString(); }
+                    break;
+            }
+        }
+
+        //Zurücksetzen der Comboboxes und der entsprechenden Felder
+        private void btnDeleteKlicked(object sender, EventArgs e)
+        {
+            Button btn = new Button();
+            btn = (Button)sender;
+
+            switch (btn.Name)
+            {
+                case "btnDelete1":
+                    this.cobNr1.SelectedIndex = -1;
+                    this.tbAC1.Text = "";
+                    this.tbCC1.Text = "49";
+                    this.tbNumber1.Text = "";
+                    break;
+                case "btnDelete2":
+                    this.cobNr2.SelectedIndex = -1;
+                    this.tbAC2.Text = "";
+                    this.tbCC2.Text = "49";
+                    this.tbNumber2.Text = "";
+                    break;
+                case "btnDelete3":
+                    this.cobNr3.SelectedIndex = -1;
+                    this.tbAC3.Text = "";
+                    this.tbCC3.Text = "49";
+                    this.tbNumber3.Text = "";
+                    break;
+                case "btnDelete4":
+                    this.cobNr4.SelectedIndex = -1;
+                    this.tbAC4.Text = "";
+                    this.tbCC4.Text = "49";
+                    this.tbNumber4.Text = "";
+                    break;
+                case "btnDelete5":
+                    this.cobMail1.SelectedIndex = -1;
+                    this.tbMail1.Text = "";
+                    break;
+                case "btnDelete6":
+                    this.cobMail2.SelectedIndex = -1;
+                    this.tbMail2.Text = "";
+                    break;
             }
         }
     }

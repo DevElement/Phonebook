@@ -37,6 +37,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.tTipButtons = new System.Windows.Forms.ToolTip(this.components);
             this.btnOpenPicture = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabContactInfos = new System.Windows.Forms.TabControl();
             this.TabGeneral = new System.Windows.Forms.TabPage();
             this.gbBirthday = new System.Windows.Forms.GroupBox();
@@ -58,6 +59,10 @@
             this.tbNachname = new System.Windows.Forms.TextBox();
             this.labNachname = new System.Windows.Forms.Label();
             this.TabNumbers = new System.Windows.Forms.TabPage();
+            this.btnDelete4 = new System.Windows.Forms.Button();
+            this.btnDelete3 = new System.Windows.Forms.Button();
+            this.btnDelete2 = new System.Windows.Forms.Button();
+            this.btnDelete1 = new System.Windows.Forms.Button();
             this.tbCC4 = new System.Windows.Forms.MaskedTextBox();
             this.tbCC3 = new System.Windows.Forms.MaskedTextBox();
             this.tbCC2 = new System.Windows.Forms.MaskedTextBox();
@@ -83,11 +88,11 @@
             this.tbAC2 = new System.Windows.Forms.TextBox();
             this.tbAC1 = new System.Windows.Forms.TextBox();
             this.TabAdress = new System.Windows.Forms.TabPage();
-            this.labCiry = new System.Windows.Forms.Label();
-            this.labHouseNumber = new System.Windows.Forms.Label();
-            this.labCountry = new System.Windows.Forms.Label();
-            this.labPLZ = new System.Windows.Forms.Label();
-            this.labStreet = new System.Windows.Forms.Label();
+            this.labCityPrivate = new System.Windows.Forms.Label();
+            this.labHouseNumberPrivate = new System.Windows.Forms.Label();
+            this.labCountryPrivate = new System.Windows.Forms.Label();
+            this.labPLZPrivate = new System.Windows.Forms.Label();
+            this.labStreetPrivate = new System.Windows.Forms.Label();
             this.tbCity = new System.Windows.Forms.TextBox();
             this.tbPLZ = new System.Windows.Forms.TextBox();
             this.tbHouseNumber = new System.Windows.Forms.TextBox();
@@ -97,20 +102,28 @@
             this.label11 = new System.Windows.Forms.Label();
             this.rtSonstigeInfos = new System.Windows.Forms.RichTextBox();
             this.gbMail = new System.Windows.Forms.GroupBox();
-            this.cbMail2 = new System.Windows.Forms.ComboBox();
-            this.cbMail1 = new System.Windows.Forms.ComboBox();
+            this.btnDelete6 = new System.Windows.Forms.Button();
+            this.btnDelete5 = new System.Windows.Forms.Button();
+            this.cobMail2 = new System.Windows.Forms.ComboBox();
+            this.cobMail1 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbMail2 = new System.Windows.Forms.TextBox();
             this.tbMail1 = new System.Windows.Forms.TextBox();
             this.labChoise = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.labAuswahl = new System.Windows.Forms.Label();
+            this.gbPrivatAdress = new System.Windows.Forms.GroupBox();
+            this.gbFirmenAdresse = new System.Windows.Forms.GroupBox();
+            this.labStreetFirm = new System.Windows.Forms.Label();
+            this.labHouseNumberFirm = new System.Windows.Forms.Label();
+            this.labPLZFirm = new System.Windows.Forms.Label();
+            this.labCityFirm = new System.Windows.Forms.Label();
+            this.labCountryFirm = new System.Windows.Forms.Label();
+            this.tbStreetFirm = new System.Windows.Forms.TextBox();
+            this.tbHouseNumberFirm = new System.Windows.Forms.TextBox();
+            this.tbPLZFirm = new System.Windows.Forms.TextBox();
+            this.tbCityFirm = new System.Windows.Forms.TextBox();
+            this.tbCountryFirm = new System.Windows.Forms.TextBox();
             this.tabContactInfos.SuspendLayout();
             this.TabGeneral.SuspendLayout();
             this.gbBirthday.SuspendLayout();
@@ -121,6 +134,8 @@
             this.TabAdress.SuspendLayout();
             this.TabOther.SuspendLayout();
             this.gbMail.SuspendLayout();
+            this.gbPrivatAdress.SuspendLayout();
+            this.gbFirmenAdresse.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnNew
@@ -202,6 +217,13 @@
             this.tTipButtons.SetToolTip(this.btnOpenPicture, "Bild für Kontakte laden");
             this.btnOpenPicture.UseVisualStyleBackColor = true;
             this.btnOpenPicture.Click += new System.EventHandler(this.btnOpenPicture_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "g12-office-excel2_97398.ico");
+            this.imageList1.Images.SetKeyName(1, "open.ico");
             // 
             // tabContactInfos
             // 
@@ -435,10 +457,11 @@
             // TabNumbers
             // 
             this.TabNumbers.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.TabNumbers.Controls.Add(this.button4);
-            this.TabNumbers.Controls.Add(this.button3);
-            this.TabNumbers.Controls.Add(this.button2);
-            this.TabNumbers.Controls.Add(this.button1);
+            this.TabNumbers.Controls.Add(this.labAuswahl);
+            this.TabNumbers.Controls.Add(this.btnDelete4);
+            this.TabNumbers.Controls.Add(this.btnDelete3);
+            this.TabNumbers.Controls.Add(this.btnDelete2);
+            this.TabNumbers.Controls.Add(this.btnDelete1);
             this.TabNumbers.Controls.Add(this.tbCC4);
             this.TabNumbers.Controls.Add(this.tbCC3);
             this.TabNumbers.Controls.Add(this.tbCC2);
@@ -469,6 +492,50 @@
             this.TabNumbers.Size = new System.Drawing.Size(790, 465);
             this.TabNumbers.TabIndex = 1;
             this.TabNumbers.Text = "Telefonnummern";
+            // 
+            // btnDelete4
+            // 
+            this.btnDelete4.ImageIndex = 0;
+            this.btnDelete4.ImageList = this.imageList1;
+            this.btnDelete4.Location = new System.Drawing.Point(731, 173);
+            this.btnDelete4.Name = "btnDelete4";
+            this.btnDelete4.Size = new System.Drawing.Size(24, 26);
+            this.btnDelete4.TabIndex = 27;
+            this.btnDelete4.UseVisualStyleBackColor = true;
+            this.btnDelete4.Click += new System.EventHandler(this.btnDeleteKlicked);
+            // 
+            // btnDelete3
+            // 
+            this.btnDelete3.ImageIndex = 0;
+            this.btnDelete3.ImageList = this.imageList1;
+            this.btnDelete3.Location = new System.Drawing.Point(731, 129);
+            this.btnDelete3.Name = "btnDelete3";
+            this.btnDelete3.Size = new System.Drawing.Size(24, 26);
+            this.btnDelete3.TabIndex = 26;
+            this.btnDelete3.UseVisualStyleBackColor = true;
+            this.btnDelete3.Click += new System.EventHandler(this.btnDeleteKlicked);
+            // 
+            // btnDelete2
+            // 
+            this.btnDelete2.ImageIndex = 0;
+            this.btnDelete2.ImageList = this.imageList1;
+            this.btnDelete2.Location = new System.Drawing.Point(731, 85);
+            this.btnDelete2.Name = "btnDelete2";
+            this.btnDelete2.Size = new System.Drawing.Size(24, 26);
+            this.btnDelete2.TabIndex = 25;
+            this.btnDelete2.UseVisualStyleBackColor = true;
+            this.btnDelete2.Click += new System.EventHandler(this.btnDeleteKlicked);
+            // 
+            // btnDelete1
+            // 
+            this.btnDelete1.ImageIndex = 0;
+            this.btnDelete1.ImageList = this.imageList1;
+            this.btnDelete1.Location = new System.Drawing.Point(731, 38);
+            this.btnDelete1.Name = "btnDelete1";
+            this.btnDelete1.Size = new System.Drawing.Size(24, 26);
+            this.btnDelete1.TabIndex = 24;
+            this.btnDelete1.UseVisualStyleBackColor = true;
+            this.btnDelete1.Click += new System.EventHandler(this.btnDeleteKlicked);
             // 
             // tbCC4
             // 
@@ -527,6 +594,7 @@
             this.cobNr4.Name = "cobNr4";
             this.cobNr4.Size = new System.Drawing.Size(202, 26);
             this.cobNr4.TabIndex = 19;
+            this.cobNr4.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // cobNr3
             // 
@@ -541,6 +609,7 @@
             this.cobNr3.Name = "cobNr3";
             this.cobNr3.Size = new System.Drawing.Size(202, 26);
             this.cobNr3.TabIndex = 18;
+            this.cobNr3.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // cobNr2
             // 
@@ -555,6 +624,7 @@
             this.cobNr2.Name = "cobNr2";
             this.cobNr2.Size = new System.Drawing.Size(202, 26);
             this.cobNr2.TabIndex = 17;
+            this.cobNr2.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // cobNr1
             // 
@@ -569,6 +639,7 @@
             this.cobNr1.Name = "cobNr1";
             this.cobNr1.Size = new System.Drawing.Size(202, 26);
             this.cobNr1.TabIndex = 16;
+            this.cobNr1.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // label8
             // 
@@ -725,16 +796,8 @@
             // TabAdress
             // 
             this.TabAdress.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.TabAdress.Controls.Add(this.labCiry);
-            this.TabAdress.Controls.Add(this.labHouseNumber);
-            this.TabAdress.Controls.Add(this.labCountry);
-            this.TabAdress.Controls.Add(this.labPLZ);
-            this.TabAdress.Controls.Add(this.labStreet);
-            this.TabAdress.Controls.Add(this.tbCity);
-            this.TabAdress.Controls.Add(this.tbPLZ);
-            this.TabAdress.Controls.Add(this.tbHouseNumber);
-            this.TabAdress.Controls.Add(this.tbCountry);
-            this.TabAdress.Controls.Add(this.tbStreet);
+            this.TabAdress.Controls.Add(this.gbFirmenAdresse);
+            this.TabAdress.Controls.Add(this.gbPrivatAdress);
             this.TabAdress.Location = new System.Drawing.Point(4, 27);
             this.TabAdress.Name = "TabAdress";
             this.TabAdress.Padding = new System.Windows.Forms.Padding(3);
@@ -742,61 +805,61 @@
             this.TabAdress.TabIndex = 2;
             this.TabAdress.Text = "Adresse";
             // 
-            // labCiry
+            // labCityPrivate
             // 
-            this.labCiry.AutoSize = true;
-            this.labCiry.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labCiry.Location = new System.Drawing.Point(373, 169);
-            this.labCiry.Name = "labCiry";
-            this.labCiry.Size = new System.Drawing.Size(59, 18);
-            this.labCiry.TabIndex = 9;
-            this.labCiry.Text = "Stadt:";
+            this.labCityPrivate.AutoSize = true;
+            this.labCityPrivate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labCityPrivate.Location = new System.Drawing.Point(305, 102);
+            this.labCityPrivate.Name = "labCityPrivate";
+            this.labCityPrivate.Size = new System.Drawing.Size(59, 18);
+            this.labCityPrivate.TabIndex = 9;
+            this.labCityPrivate.Text = "Stadt:";
             // 
-            // labHouseNumber
+            // labHouseNumberPrivate
             // 
-            this.labHouseNumber.AutoSize = true;
-            this.labHouseNumber.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labHouseNumber.Location = new System.Drawing.Point(640, 99);
-            this.labHouseNumber.Name = "labHouseNumber";
-            this.labHouseNumber.Size = new System.Drawing.Size(37, 18);
-            this.labHouseNumber.TabIndex = 8;
-            this.labHouseNumber.Text = "Nr.:";
+            this.labHouseNumberPrivate.AutoSize = true;
+            this.labHouseNumberPrivate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labHouseNumberPrivate.Location = new System.Drawing.Point(572, 32);
+            this.labHouseNumberPrivate.Name = "labHouseNumberPrivate";
+            this.labHouseNumberPrivate.Size = new System.Drawing.Size(37, 18);
+            this.labHouseNumberPrivate.TabIndex = 8;
+            this.labHouseNumberPrivate.Text = "Nr.:";
             // 
-            // labCountry
+            // labCountryPrivate
             // 
-            this.labCountry.AutoSize = true;
-            this.labCountry.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labCountry.Location = new System.Drawing.Point(74, 239);
-            this.labCountry.Name = "labCountry";
-            this.labCountry.Size = new System.Drawing.Size(54, 18);
-            this.labCountry.TabIndex = 7;
-            this.labCountry.Text = "Land:";
+            this.labCountryPrivate.AutoSize = true;
+            this.labCountryPrivate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labCountryPrivate.Location = new System.Drawing.Point(6, 172);
+            this.labCountryPrivate.Name = "labCountryPrivate";
+            this.labCountryPrivate.Size = new System.Drawing.Size(54, 18);
+            this.labCountryPrivate.TabIndex = 7;
+            this.labCountryPrivate.Text = "Land:";
             // 
-            // labPLZ
+            // labPLZPrivate
             // 
-            this.labPLZ.AutoSize = true;
-            this.labPLZ.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labPLZ.Location = new System.Drawing.Point(74, 169);
-            this.labPLZ.Name = "labPLZ";
-            this.labPLZ.Size = new System.Drawing.Size(45, 18);
-            this.labPLZ.TabIndex = 6;
-            this.labPLZ.Text = "PLZ:";
+            this.labPLZPrivate.AutoSize = true;
+            this.labPLZPrivate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labPLZPrivate.Location = new System.Drawing.Point(6, 102);
+            this.labPLZPrivate.Name = "labPLZPrivate";
+            this.labPLZPrivate.Size = new System.Drawing.Size(45, 18);
+            this.labPLZPrivate.TabIndex = 6;
+            this.labPLZPrivate.Text = "PLZ:";
             // 
-            // labStreet
+            // labStreetPrivate
             // 
-            this.labStreet.AutoSize = true;
-            this.labStreet.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labStreet.Location = new System.Drawing.Point(74, 99);
-            this.labStreet.Name = "labStreet";
-            this.labStreet.Size = new System.Drawing.Size(68, 18);
-            this.labStreet.TabIndex = 5;
-            this.labStreet.Text = "Straße:";
+            this.labStreetPrivate.AutoSize = true;
+            this.labStreetPrivate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labStreetPrivate.Location = new System.Drawing.Point(6, 32);
+            this.labStreetPrivate.Name = "labStreetPrivate";
+            this.labStreetPrivate.Size = new System.Drawing.Size(68, 18);
+            this.labStreetPrivate.TabIndex = 5;
+            this.labStreetPrivate.Text = "Straße:";
             // 
             // tbCity
             // 
             this.tbCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbCity.ForeColor = System.Drawing.Color.White;
-            this.tbCity.Location = new System.Drawing.Point(440, 160);
+            this.tbCity.Location = new System.Drawing.Point(372, 93);
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(303, 27);
             this.tbCity.TabIndex = 4;
@@ -805,7 +868,7 @@
             // 
             this.tbPLZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbPLZ.ForeColor = System.Drawing.Color.White;
-            this.tbPLZ.Location = new System.Drawing.Point(176, 160);
+            this.tbPLZ.Location = new System.Drawing.Point(108, 93);
             this.tbPLZ.Name = "tbPLZ";
             this.tbPLZ.Size = new System.Drawing.Size(154, 27);
             this.tbPLZ.TabIndex = 3;
@@ -814,7 +877,7 @@
             // 
             this.tbHouseNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbHouseNumber.ForeColor = System.Drawing.Color.White;
-            this.tbHouseNumber.Location = new System.Drawing.Point(686, 90);
+            this.tbHouseNumber.Location = new System.Drawing.Point(618, 23);
             this.tbHouseNumber.Name = "tbHouseNumber";
             this.tbHouseNumber.Size = new System.Drawing.Size(57, 27);
             this.tbHouseNumber.TabIndex = 2;
@@ -823,7 +886,7 @@
             // 
             this.tbCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbCountry.ForeColor = System.Drawing.Color.White;
-            this.tbCountry.Location = new System.Drawing.Point(176, 230);
+            this.tbCountry.Location = new System.Drawing.Point(108, 163);
             this.tbCountry.Name = "tbCountry";
             this.tbCountry.Size = new System.Drawing.Size(472, 27);
             this.tbCountry.TabIndex = 1;
@@ -832,7 +895,7 @@
             // 
             this.tbStreet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbStreet.ForeColor = System.Drawing.Color.White;
-            this.tbStreet.Location = new System.Drawing.Point(176, 90);
+            this.tbStreet.Location = new System.Drawing.Point(108, 23);
             this.tbStreet.Name = "tbStreet";
             this.tbStreet.Size = new System.Drawing.Size(447, 27);
             this.tbStreet.TabIndex = 0;
@@ -872,10 +935,10 @@
             // 
             // gbMail
             // 
-            this.gbMail.Controls.Add(this.button6);
-            this.gbMail.Controls.Add(this.button5);
-            this.gbMail.Controls.Add(this.cbMail2);
-            this.gbMail.Controls.Add(this.cbMail1);
+            this.gbMail.Controls.Add(this.btnDelete6);
+            this.gbMail.Controls.Add(this.btnDelete5);
+            this.gbMail.Controls.Add(this.cobMail2);
+            this.gbMail.Controls.Add(this.cobMail1);
             this.gbMail.Controls.Add(this.label10);
             this.gbMail.Controls.Add(this.label9);
             this.gbMail.Controls.Add(this.tbMail2);
@@ -888,31 +951,55 @@
             this.gbMail.TabStop = false;
             this.gbMail.Text = "E-Mail";
             // 
-            // cbMail2
+            // btnDelete6
             // 
-            this.cbMail2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMail2.FormattingEnabled = true;
-            this.cbMail2.Items.AddRange(new object[] {
+            this.btnDelete6.ImageIndex = 0;
+            this.btnDelete6.ImageList = this.imageList1;
+            this.btnDelete6.Location = new System.Drawing.Point(711, 60);
+            this.btnDelete6.Name = "btnDelete6";
+            this.btnDelete6.Size = new System.Drawing.Size(24, 26);
+            this.btnDelete6.TabIndex = 28;
+            this.btnDelete6.UseVisualStyleBackColor = true;
+            this.btnDelete6.Click += new System.EventHandler(this.btnDeleteKlicked);
+            // 
+            // btnDelete5
+            // 
+            this.btnDelete5.ImageIndex = 0;
+            this.btnDelete5.ImageList = this.imageList1;
+            this.btnDelete5.Location = new System.Drawing.Point(711, 28);
+            this.btnDelete5.Name = "btnDelete5";
+            this.btnDelete5.Size = new System.Drawing.Size(24, 26);
+            this.btnDelete5.TabIndex = 27;
+            this.btnDelete5.UseVisualStyleBackColor = true;
+            this.btnDelete5.Click += new System.EventHandler(this.btnDeleteKlicked);
+            // 
+            // cobMail2
+            // 
+            this.cobMail2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cobMail2.FormattingEnabled = true;
+            this.cobMail2.Items.AddRange(new object[] {
             "Privat",
             "Arbeit",
             "Sonstige"});
-            this.cbMail2.Location = new System.Drawing.Point(553, 60);
-            this.cbMail2.Name = "cbMail2";
-            this.cbMail2.Size = new System.Drawing.Size(152, 26);
-            this.cbMail2.TabIndex = 5;
+            this.cobMail2.Location = new System.Drawing.Point(553, 60);
+            this.cobMail2.Name = "cobMail2";
+            this.cobMail2.Size = new System.Drawing.Size(152, 26);
+            this.cobMail2.TabIndex = 5;
+            this.cobMail2.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
-            // cbMail1
+            // cobMail1
             // 
-            this.cbMail1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMail1.FormattingEnabled = true;
-            this.cbMail1.Items.AddRange(new object[] {
+            this.cobMail1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cobMail1.FormattingEnabled = true;
+            this.cobMail1.Items.AddRange(new object[] {
             "Privat",
             "Arbeit",
             "Sonstige"});
-            this.cbMail1.Location = new System.Drawing.Point(553, 28);
-            this.cbMail1.Name = "cbMail1";
-            this.cbMail1.Size = new System.Drawing.Size(152, 26);
-            this.cbMail1.TabIndex = 4;
+            this.cobMail1.Location = new System.Drawing.Point(553, 28);
+            this.cobMail1.Name = "cobMail1";
+            this.cobMail1.Size = new System.Drawing.Size(152, 26);
+            this.cobMail1.TabIndex = 4;
+            this.cobMail1.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // label10
             // 
@@ -960,72 +1047,147 @@
             this.labChoise.TabIndex = 5;
             this.labChoise.Text = "Bitte wählen Sie \"Neuer Kontakt\" oder \"Kontakt öffnen\" aus!";
             // 
-            // imageList1
+            // labAuswahl
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "g12-office-excel2_97398.ico");
-            this.imageList1.Images.SetKeyName(1, "open.ico");
+            this.labAuswahl.AutoSize = true;
+            this.labAuswahl.Location = new System.Drawing.Point(578, 281);
+            this.labAuswahl.Name = "labAuswahl";
+            this.labAuswahl.Size = new System.Drawing.Size(98, 18);
+            this.labAuswahl.TabIndex = 28;
+            this.labAuswahl.Text = "_ _ _ _ _ _";
             // 
-            // button1
+            // gbPrivatAdress
             // 
-            this.button1.ImageIndex = 0;
-            this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(731, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 26);
-            this.button1.TabIndex = 24;
-            this.button1.UseVisualStyleBackColor = true;
+            this.gbPrivatAdress.Controls.Add(this.labStreetPrivate);
+            this.gbPrivatAdress.Controls.Add(this.labCityPrivate);
+            this.gbPrivatAdress.Controls.Add(this.tbStreet);
+            this.gbPrivatAdress.Controls.Add(this.labHouseNumberPrivate);
+            this.gbPrivatAdress.Controls.Add(this.tbCountry);
+            this.gbPrivatAdress.Controls.Add(this.labCountryPrivate);
+            this.gbPrivatAdress.Controls.Add(this.tbHouseNumber);
+            this.gbPrivatAdress.Controls.Add(this.labPLZPrivate);
+            this.gbPrivatAdress.Controls.Add(this.tbPLZ);
+            this.gbPrivatAdress.Controls.Add(this.tbCity);
+            this.gbPrivatAdress.Location = new System.Drawing.Point(21, 16);
+            this.gbPrivatAdress.Name = "gbPrivatAdress";
+            this.gbPrivatAdress.Size = new System.Drawing.Size(745, 200);
+            this.gbPrivatAdress.TabIndex = 10;
+            this.gbPrivatAdress.TabStop = false;
+            this.gbPrivatAdress.Text = "Privatadresse";
             // 
-            // button2
+            // gbFirmenAdresse
             // 
-            this.button2.ImageIndex = 0;
-            this.button2.ImageList = this.imageList1;
-            this.button2.Location = new System.Drawing.Point(731, 85);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(24, 26);
-            this.button2.TabIndex = 25;
-            this.button2.UseVisualStyleBackColor = true;
+            this.gbFirmenAdresse.Controls.Add(this.tbCountryFirm);
+            this.gbFirmenAdresse.Controls.Add(this.tbCityFirm);
+            this.gbFirmenAdresse.Controls.Add(this.tbPLZFirm);
+            this.gbFirmenAdresse.Controls.Add(this.tbHouseNumberFirm);
+            this.gbFirmenAdresse.Controls.Add(this.tbStreetFirm);
+            this.gbFirmenAdresse.Controls.Add(this.labCountryFirm);
+            this.gbFirmenAdresse.Controls.Add(this.labCityFirm);
+            this.gbFirmenAdresse.Controls.Add(this.labPLZFirm);
+            this.gbFirmenAdresse.Controls.Add(this.labHouseNumberFirm);
+            this.gbFirmenAdresse.Controls.Add(this.labStreetFirm);
+            this.gbFirmenAdresse.Location = new System.Drawing.Point(21, 234);
+            this.gbFirmenAdresse.Name = "gbFirmenAdresse";
+            this.gbFirmenAdresse.Size = new System.Drawing.Size(745, 200);
+            this.gbFirmenAdresse.TabIndex = 11;
+            this.gbFirmenAdresse.TabStop = false;
+            this.gbFirmenAdresse.Text = "Firmenadresse";
             // 
-            // button3
+            // labStreetFirm
             // 
-            this.button3.ImageIndex = 0;
-            this.button3.ImageList = this.imageList1;
-            this.button3.Location = new System.Drawing.Point(731, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(24, 26);
-            this.button3.TabIndex = 26;
-            this.button3.UseVisualStyleBackColor = true;
+            this.labStreetFirm.AutoSize = true;
+            this.labStreetFirm.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labStreetFirm.Location = new System.Drawing.Point(6, 32);
+            this.labStreetFirm.Name = "labStreetFirm";
+            this.labStreetFirm.Size = new System.Drawing.Size(68, 18);
+            this.labStreetFirm.TabIndex = 6;
+            this.labStreetFirm.Text = "Straße:";
             // 
-            // button4
+            // labHouseNumberFirm
             // 
-            this.button4.ImageIndex = 0;
-            this.button4.ImageList = this.imageList1;
-            this.button4.Location = new System.Drawing.Point(731, 173);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(24, 26);
-            this.button4.TabIndex = 27;
-            this.button4.UseVisualStyleBackColor = true;
+            this.labHouseNumberFirm.AutoSize = true;
+            this.labHouseNumberFirm.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labHouseNumberFirm.Location = new System.Drawing.Point(572, 32);
+            this.labHouseNumberFirm.Name = "labHouseNumberFirm";
+            this.labHouseNumberFirm.Size = new System.Drawing.Size(37, 18);
+            this.labHouseNumberFirm.TabIndex = 9;
+            this.labHouseNumberFirm.Text = "Nr.:";
             // 
-            // button5
+            // labPLZFirm
             // 
-            this.button5.ImageIndex = 0;
-            this.button5.ImageList = this.imageList1;
-            this.button5.Location = new System.Drawing.Point(711, 28);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(24, 26);
-            this.button5.TabIndex = 27;
-            this.button5.UseVisualStyleBackColor = true;
+            this.labPLZFirm.AutoSize = true;
+            this.labPLZFirm.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labPLZFirm.Location = new System.Drawing.Point(6, 96);
+            this.labPLZFirm.Name = "labPLZFirm";
+            this.labPLZFirm.Size = new System.Drawing.Size(45, 18);
+            this.labPLZFirm.TabIndex = 10;
+            this.labPLZFirm.Text = "PLZ:";
             // 
-            // button6
+            // labCityFirm
             // 
-            this.button6.ImageIndex = 0;
-            this.button6.ImageList = this.imageList1;
-            this.button6.Location = new System.Drawing.Point(711, 60);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(24, 26);
-            this.button6.TabIndex = 28;
-            this.button6.UseVisualStyleBackColor = true;
+            this.labCityFirm.AutoSize = true;
+            this.labCityFirm.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labCityFirm.Location = new System.Drawing.Point(305, 96);
+            this.labCityFirm.Name = "labCityFirm";
+            this.labCityFirm.Size = new System.Drawing.Size(59, 18);
+            this.labCityFirm.TabIndex = 10;
+            this.labCityFirm.Text = "Stadt:";
+            // 
+            // labCountryFirm
+            // 
+            this.labCountryFirm.AutoSize = true;
+            this.labCountryFirm.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labCountryFirm.Location = new System.Drawing.Point(6, 170);
+            this.labCountryFirm.Name = "labCountryFirm";
+            this.labCountryFirm.Size = new System.Drawing.Size(54, 18);
+            this.labCountryFirm.TabIndex = 11;
+            this.labCountryFirm.Text = "Land:";
+            // 
+            // tbStreetFirm
+            // 
+            this.tbStreetFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbStreetFirm.ForeColor = System.Drawing.Color.White;
+            this.tbStreetFirm.Location = new System.Drawing.Point(108, 23);
+            this.tbStreetFirm.Name = "tbStreetFirm";
+            this.tbStreetFirm.Size = new System.Drawing.Size(447, 27);
+            this.tbStreetFirm.TabIndex = 10;
+            // 
+            // tbHouseNumberFirm
+            // 
+            this.tbHouseNumberFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbHouseNumberFirm.ForeColor = System.Drawing.Color.White;
+            this.tbHouseNumberFirm.Location = new System.Drawing.Point(618, 23);
+            this.tbHouseNumberFirm.Name = "tbHouseNumberFirm";
+            this.tbHouseNumberFirm.Size = new System.Drawing.Size(57, 27);
+            this.tbHouseNumberFirm.TabIndex = 12;
+            // 
+            // tbPLZFirm
+            // 
+            this.tbPLZFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbPLZFirm.ForeColor = System.Drawing.Color.White;
+            this.tbPLZFirm.Location = new System.Drawing.Point(108, 87);
+            this.tbPLZFirm.Name = "tbPLZFirm";
+            this.tbPLZFirm.Size = new System.Drawing.Size(154, 27);
+            this.tbPLZFirm.TabIndex = 10;
+            // 
+            // tbCityFirm
+            // 
+            this.tbCityFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCityFirm.ForeColor = System.Drawing.Color.White;
+            this.tbCityFirm.Location = new System.Drawing.Point(372, 87);
+            this.tbCityFirm.Name = "tbCityFirm";
+            this.tbCityFirm.Size = new System.Drawing.Size(303, 27);
+            this.tbCityFirm.TabIndex = 13;
+            // 
+            // tbCountryFirm
+            // 
+            this.tbCountryFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCountryFirm.ForeColor = System.Drawing.Color.White;
+            this.tbCountryFirm.Location = new System.Drawing.Point(108, 161);
+            this.tbCountryFirm.Name = "tbCountryFirm";
+            this.tbCountryFirm.Size = new System.Drawing.Size(472, 27);
+            this.tbCountryFirm.TabIndex = 14;
             // 
             // frmMain
             // 
@@ -1063,11 +1225,14 @@
             this.TabNumbers.ResumeLayout(false);
             this.TabNumbers.PerformLayout();
             this.TabAdress.ResumeLayout(false);
-            this.TabAdress.PerformLayout();
             this.TabOther.ResumeLayout(false);
             this.TabOther.PerformLayout();
             this.gbMail.ResumeLayout(false);
             this.gbMail.PerformLayout();
+            this.gbPrivatAdress.ResumeLayout(false);
+            this.gbPrivatAdress.PerformLayout();
+            this.gbFirmenAdresse.ResumeLayout(false);
+            this.gbFirmenAdresse.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1126,11 +1291,11 @@
         private System.Windows.Forms.MaskedTextBox tbCC4;
         private System.Windows.Forms.MaskedTextBox tbCC3;
         private System.Windows.Forms.MaskedTextBox tbCC2;
-        private System.Windows.Forms.Label labCiry;
-        private System.Windows.Forms.Label labHouseNumber;
-        private System.Windows.Forms.Label labCountry;
-        private System.Windows.Forms.Label labPLZ;
-        private System.Windows.Forms.Label labStreet;
+        private System.Windows.Forms.Label labCityPrivate;
+        private System.Windows.Forms.Label labHouseNumberPrivate;
+        private System.Windows.Forms.Label labCountryPrivate;
+        private System.Windows.Forms.Label labPLZPrivate;
+        private System.Windows.Forms.Label labStreetPrivate;
         private System.Windows.Forms.TextBox tbCity;
         private System.Windows.Forms.TextBox tbPLZ;
         private System.Windows.Forms.TextBox tbHouseNumber;
@@ -1139,8 +1304,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RichTextBox rtSonstigeInfos;
         private System.Windows.Forms.GroupBox gbMail;
-        private System.Windows.Forms.ComboBox cbMail2;
-        private System.Windows.Forms.ComboBox cbMail1;
+        private System.Windows.Forms.ComboBox cobMail2;
+        private System.Windows.Forms.ComboBox cobMail1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbMail2;
@@ -1149,12 +1314,25 @@
         private System.Windows.Forms.Label labChoise;
         private System.Windows.Forms.MaskedTextBox tbBirthday;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnDelete4;
+        private System.Windows.Forms.Button btnDelete3;
+        private System.Windows.Forms.Button btnDelete2;
+        private System.Windows.Forms.Button btnDelete1;
+        private System.Windows.Forms.Button btnDelete6;
+        private System.Windows.Forms.Button btnDelete5;
+        private System.Windows.Forms.Label labAuswahl;
+        private System.Windows.Forms.GroupBox gbFirmenAdresse;
+        private System.Windows.Forms.Label labStreetFirm;
+        private System.Windows.Forms.GroupBox gbPrivatAdress;
+        private System.Windows.Forms.Label labPLZFirm;
+        private System.Windows.Forms.Label labHouseNumberFirm;
+        private System.Windows.Forms.Label labCityFirm;
+        private System.Windows.Forms.Label labCountryFirm;
+        private System.Windows.Forms.TextBox tbCountryFirm;
+        private System.Windows.Forms.TextBox tbCityFirm;
+        private System.Windows.Forms.TextBox tbPLZFirm;
+        private System.Windows.Forms.TextBox tbHouseNumberFirm;
+        private System.Windows.Forms.TextBox tbStreetFirm;
     }
 }
 
