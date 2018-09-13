@@ -41,6 +41,8 @@ namespace Telefonbuch
             this.btnPreview.Visible = true;
             this.btnSave.Visible = true;
             this.labChoise.Visible = false;
+            this.labDevinfo.Visible = false;
+            this.pbDev.Visible = false;
         }
 
         //ComboBox "ShowAs --> Auswahl geändert".
