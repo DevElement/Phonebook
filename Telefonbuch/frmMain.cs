@@ -41,7 +41,7 @@ namespace Telefonbuch
             this.btnPreview.Visible = true;
             this.btnSave.Visible = true;
             this.labChoise.Visible = false;
-            this.labDevinfo.Visible = false;
+            this.label12.Visible = false;
             this.pbDev.Visible = false;
         }
 
@@ -194,6 +194,16 @@ namespace Telefonbuch
                     this.tbMail2.Text = "";
                     break;
             }
+        }
+
+        private void pbDev_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.develement.de");
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.develement.de");
         }
     }
 }

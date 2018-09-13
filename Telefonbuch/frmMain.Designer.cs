@@ -124,7 +124,7 @@
             this.tbMail2 = new System.Windows.Forms.TextBox();
             this.tbMail1 = new System.Windows.Forms.TextBox();
             this.labChoise = new System.Windows.Forms.Label();
-            this.labDevinfo = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.pbDev = new System.Windows.Forms.PictureBox();
             this.tabContactInfos.SuspendLayout();
             this.TabGeneral.SuspendLayout();
@@ -144,6 +144,7 @@
             // btnNew
             // 
             this.btnNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnNew.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNew.ImageIndex = 0;
             this.btnNew.ImageList = this.ilButtons;
@@ -169,6 +170,7 @@
             // btnOpen
             // 
             this.btnOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnOpen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpen.ImageIndex = 1;
             this.btnOpen.ImageList = this.ilButtons;
@@ -182,6 +184,7 @@
             // btnPreview
             // 
             this.btnPreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnPreview.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPreview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPreview.ImageIndex = 2;
             this.btnPreview.ImageList = this.ilButtons;
@@ -196,6 +199,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ImageIndex = 3;
             this.btnSave.ImageList = this.ilButtons;
@@ -215,6 +219,7 @@
             // 
             // btnOpenPicture
             // 
+            this.btnOpenPicture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOpenPicture.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenPicture.ImageIndex = 1;
             this.btnOpenPicture.ImageList = this.imageList1;
@@ -240,7 +245,7 @@
             this.tabContactInfos.Controls.Add(this.TabNumbers);
             this.tabContactInfos.Controls.Add(this.TabAdress);
             this.tabContactInfos.Controls.Add(this.TabOther);
-            this.tabContactInfos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tabContactInfos.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabContactInfos.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabContactInfos.Location = new System.Drawing.Point(13, 118);
             this.tabContactInfos.Name = "tabContactInfos";
@@ -287,6 +292,8 @@
             // 
             // tbBirthday
             // 
+            this.tbBirthday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbBirthday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBirthday.Location = new System.Drawing.Point(6, 26);
             this.tbBirthday.Mask = "00/00/0000";
             this.tbBirthday.Name = "tbBirthday";
@@ -338,6 +345,7 @@
             // 
             // cobShowAs
             // 
+            this.cobShowAs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cobShowAs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cobShowAs.FormattingEnabled = true;
             this.cobShowAs.Items.AddRange(new object[] {
@@ -390,6 +398,7 @@
             // tbTitel
             // 
             this.tbTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbTitel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbTitel.ForeColor = System.Drawing.Color.White;
             this.tbTitel.Location = new System.Drawing.Point(158, 105);
             this.tbTitel.Name = "tbTitel";
@@ -409,6 +418,7 @@
             // tbNickname
             // 
             this.tbNickname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbNickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNickname.ForeColor = System.Drawing.Color.White;
             this.tbNickname.Location = new System.Drawing.Point(158, 72);
             this.tbNickname.Name = "tbNickname";
@@ -428,6 +438,7 @@
             // tbVorname
             // 
             this.tbVorname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbVorname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbVorname.ForeColor = System.Drawing.Color.White;
             this.tbVorname.Location = new System.Drawing.Point(158, 39);
             this.tbVorname.Name = "tbVorname";
@@ -447,6 +458,7 @@
             // tbNachname
             // 
             this.tbNachname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbNachname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNachname.ForeColor = System.Drawing.Color.White;
             this.tbNachname.Location = new System.Drawing.Point(158, 6);
             this.tbNachname.Name = "tbNachname";
@@ -513,6 +525,7 @@
             // 
             // btnDelete4
             // 
+            this.btnDelete4.Cursor = System.Windows.Forms.Cursors.No;
             this.btnDelete4.ImageIndex = 0;
             this.btnDelete4.ImageList = this.imageList1;
             this.btnDelete4.Location = new System.Drawing.Point(731, 173);
@@ -524,6 +537,7 @@
             // 
             // btnDelete3
             // 
+            this.btnDelete3.Cursor = System.Windows.Forms.Cursors.No;
             this.btnDelete3.ImageIndex = 0;
             this.btnDelete3.ImageList = this.imageList1;
             this.btnDelete3.Location = new System.Drawing.Point(731, 129);
@@ -535,6 +549,7 @@
             // 
             // btnDelete2
             // 
+            this.btnDelete2.Cursor = System.Windows.Forms.Cursors.No;
             this.btnDelete2.ImageIndex = 0;
             this.btnDelete2.ImageList = this.imageList1;
             this.btnDelete2.Location = new System.Drawing.Point(731, 85);
@@ -546,6 +561,7 @@
             // 
             // btnDelete1
             // 
+            this.btnDelete1.Cursor = System.Windows.Forms.Cursors.No;
             this.btnDelete1.ImageIndex = 0;
             this.btnDelete1.ImageList = this.imageList1;
             this.btnDelete1.Location = new System.Drawing.Point(731, 38);
@@ -558,6 +574,7 @@
             // tbCC4
             // 
             this.tbCC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCC4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCC4.ForeColor = System.Drawing.Color.White;
             this.tbCC4.Location = new System.Drawing.Point(77, 172);
             this.tbCC4.Mask = "+00";
@@ -569,6 +586,7 @@
             // tbCC3
             // 
             this.tbCC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCC3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCC3.ForeColor = System.Drawing.Color.White;
             this.tbCC3.Location = new System.Drawing.Point(76, 126);
             this.tbCC3.Mask = "+00";
@@ -580,6 +598,7 @@
             // tbCC2
             // 
             this.tbCC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCC2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCC2.ForeColor = System.Drawing.Color.White;
             this.tbCC2.Location = new System.Drawing.Point(77, 82);
             this.tbCC2.Mask = "+00";
@@ -591,6 +610,7 @@
             // tbCC1
             // 
             this.tbCC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCC1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCC1.ForeColor = System.Drawing.Color.White;
             this.tbCC1.Location = new System.Drawing.Point(77, 37);
             this.tbCC1.Mask = "+00";
@@ -601,6 +621,7 @@
             // 
             // cobNr4
             // 
+            this.cobNr4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cobNr4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cobNr4.FormattingEnabled = true;
             this.cobNr4.Items.AddRange(new object[] {
@@ -616,6 +637,7 @@
             // 
             // cobNr3
             // 
+            this.cobNr3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cobNr3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cobNr3.FormattingEnabled = true;
             this.cobNr3.Items.AddRange(new object[] {
@@ -631,6 +653,7 @@
             // 
             // cobNr2
             // 
+            this.cobNr2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cobNr2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cobNr2.FormattingEnabled = true;
             this.cobNr2.Items.AddRange(new object[] {
@@ -646,6 +669,7 @@
             // 
             // cobNr1
             // 
+            this.cobNr1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cobNr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cobNr1.FormattingEnabled = true;
             this.cobNr1.Items.AddRange(new object[] {
@@ -742,6 +766,7 @@
             // tbNumber4
             // 
             this.tbNumber4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbNumber4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNumber4.ForeColor = System.Drawing.Color.White;
             this.tbNumber4.Location = new System.Drawing.Point(263, 172);
             this.tbNumber4.Name = "tbNumber4";
@@ -751,6 +776,7 @@
             // tbNumber3
             // 
             this.tbNumber3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbNumber3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNumber3.ForeColor = System.Drawing.Color.White;
             this.tbNumber3.Location = new System.Drawing.Point(263, 126);
             this.tbNumber3.Name = "tbNumber3";
@@ -760,6 +786,7 @@
             // tbNumber2
             // 
             this.tbNumber2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbNumber2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNumber2.ForeColor = System.Drawing.Color.White;
             this.tbNumber2.Location = new System.Drawing.Point(263, 82);
             this.tbNumber2.Name = "tbNumber2";
@@ -769,6 +796,7 @@
             // tbNumber1
             // 
             this.tbNumber1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbNumber1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNumber1.ForeColor = System.Drawing.Color.White;
             this.tbNumber1.Location = new System.Drawing.Point(263, 37);
             this.tbNumber1.Name = "tbNumber1";
@@ -778,6 +806,7 @@
             // tbAC4
             // 
             this.tbAC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbAC4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAC4.ForeColor = System.Drawing.Color.White;
             this.tbAC4.Location = new System.Drawing.Point(123, 172);
             this.tbAC4.Name = "tbAC4";
@@ -787,6 +816,7 @@
             // tbAC3
             // 
             this.tbAC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbAC3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAC3.ForeColor = System.Drawing.Color.White;
             this.tbAC3.Location = new System.Drawing.Point(123, 126);
             this.tbAC3.Name = "tbAC3";
@@ -796,6 +826,7 @@
             // tbAC2
             // 
             this.tbAC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbAC2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAC2.ForeColor = System.Drawing.Color.White;
             this.tbAC2.Location = new System.Drawing.Point(123, 82);
             this.tbAC2.Name = "tbAC2";
@@ -805,6 +836,7 @@
             // tbAC1
             // 
             this.tbAC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbAC1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAC1.ForeColor = System.Drawing.Color.White;
             this.tbAC1.Location = new System.Drawing.Point(123, 37);
             this.tbAC1.Name = "tbAC1";
@@ -845,6 +877,7 @@
             // tbCountryFirm
             // 
             this.tbCountryFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCountryFirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCountryFirm.ForeColor = System.Drawing.Color.White;
             this.tbCountryFirm.Location = new System.Drawing.Point(108, 161);
             this.tbCountryFirm.Name = "tbCountryFirm";
@@ -854,6 +887,7 @@
             // tbCityFirm
             // 
             this.tbCityFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCityFirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCityFirm.ForeColor = System.Drawing.Color.White;
             this.tbCityFirm.Location = new System.Drawing.Point(372, 87);
             this.tbCityFirm.Name = "tbCityFirm";
@@ -863,6 +897,7 @@
             // tbPLZFirm
             // 
             this.tbPLZFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbPLZFirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPLZFirm.ForeColor = System.Drawing.Color.White;
             this.tbPLZFirm.Location = new System.Drawing.Point(108, 87);
             this.tbPLZFirm.Name = "tbPLZFirm";
@@ -872,6 +907,7 @@
             // tbHouseNumberFirm
             // 
             this.tbHouseNumberFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbHouseNumberFirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbHouseNumberFirm.ForeColor = System.Drawing.Color.White;
             this.tbHouseNumberFirm.Location = new System.Drawing.Point(618, 23);
             this.tbHouseNumberFirm.Name = "tbHouseNumberFirm";
@@ -881,6 +917,7 @@
             // tbStreetFirm
             // 
             this.tbStreetFirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbStreetFirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbStreetFirm.ForeColor = System.Drawing.Color.White;
             this.tbStreetFirm.Location = new System.Drawing.Point(108, 23);
             this.tbStreetFirm.Name = "tbStreetFirm";
@@ -979,6 +1016,7 @@
             // tbStreet
             // 
             this.tbStreet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbStreet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbStreet.ForeColor = System.Drawing.Color.White;
             this.tbStreet.Location = new System.Drawing.Point(108, 23);
             this.tbStreet.Name = "tbStreet";
@@ -998,6 +1036,7 @@
             // tbCountry
             // 
             this.tbCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCountry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCountry.ForeColor = System.Drawing.Color.White;
             this.tbCountry.Location = new System.Drawing.Point(108, 163);
             this.tbCountry.Name = "tbCountry";
@@ -1017,6 +1056,7 @@
             // tbHouseNumber
             // 
             this.tbHouseNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbHouseNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbHouseNumber.ForeColor = System.Drawing.Color.White;
             this.tbHouseNumber.Location = new System.Drawing.Point(618, 23);
             this.tbHouseNumber.Name = "tbHouseNumber";
@@ -1036,6 +1076,7 @@
             // tbPLZ
             // 
             this.tbPLZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbPLZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPLZ.ForeColor = System.Drawing.Color.White;
             this.tbPLZ.Location = new System.Drawing.Point(108, 93);
             this.tbPLZ.Name = "tbPLZ";
@@ -1045,6 +1086,7 @@
             // tbCity
             // 
             this.tbCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCity.ForeColor = System.Drawing.Color.White;
             this.tbCity.Location = new System.Drawing.Point(372, 93);
             this.tbCity.Name = "tbCity";
@@ -1077,6 +1119,7 @@
             // rtSonstigeInfos
             // 
             this.rtSonstigeInfos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rtSonstigeInfos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtSonstigeInfos.ForeColor = System.Drawing.Color.White;
             this.rtSonstigeInfos.Location = new System.Drawing.Point(23, 149);
             this.rtSonstigeInfos.Name = "rtSonstigeInfos";
@@ -1104,6 +1147,7 @@
             // 
             // btnDelete6
             // 
+            this.btnDelete6.Cursor = System.Windows.Forms.Cursors.No;
             this.btnDelete6.ImageIndex = 0;
             this.btnDelete6.ImageList = this.imageList1;
             this.btnDelete6.Location = new System.Drawing.Point(711, 60);
@@ -1115,6 +1159,7 @@
             // 
             // btnDelete5
             // 
+            this.btnDelete5.Cursor = System.Windows.Forms.Cursors.No;
             this.btnDelete5.ImageIndex = 0;
             this.btnDelete5.ImageList = this.imageList1;
             this.btnDelete5.Location = new System.Drawing.Point(711, 28);
@@ -1126,6 +1171,7 @@
             // 
             // cobMail2
             // 
+            this.cobMail2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cobMail2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cobMail2.FormattingEnabled = true;
             this.cobMail2.Items.AddRange(new object[] {
@@ -1140,6 +1186,7 @@
             // 
             // cobMail1
             // 
+            this.cobMail1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cobMail1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cobMail1.FormattingEnabled = true;
             this.cobMail1.Items.AddRange(new object[] {
@@ -1173,6 +1220,7 @@
             // tbMail2
             // 
             this.tbMail2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbMail2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbMail2.ForeColor = System.Drawing.Color.White;
             this.tbMail2.Location = new System.Drawing.Point(67, 60);
             this.tbMail2.Name = "tbMail2";
@@ -1182,6 +1230,7 @@
             // tbMail1
             // 
             this.tbMail1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbMail1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbMail1.ForeColor = System.Drawing.Color.White;
             this.tbMail1.Location = new System.Drawing.Point(67, 27);
             this.tbMail1.Name = "tbMail1";
@@ -1198,24 +1247,28 @@
             this.labChoise.TabIndex = 5;
             this.labChoise.Text = "Bitte wählen Sie \"Neuer Kontakt\" oder \"Kontakt öffnen\" aus!";
             // 
-            // labDevinfo
+            // label12
             // 
-            this.labDevinfo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labDevinfo.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labDevinfo.Location = new System.Drawing.Point(581, 103);
-            this.labDevinfo.Name = "labDevinfo";
-            this.labDevinfo.Size = new System.Drawing.Size(230, 18);
-            this.labDevinfo.TabIndex = 8;
-            this.labDevinfo.Text = "DevElement 2018 - Harald Rieder";
+            this.label12.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label12.Location = new System.Drawing.Point(590, 607);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(230, 18);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "DevElement 2018 - Harald Rieder";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // pbDev
             // 
+            this.pbDev.Cursor = System.Windows.Forms.Cursors.Help;
             this.pbDev.Image = ((System.Drawing.Image)(resources.GetObject("pbDev.Image")));
-            this.pbDev.Location = new System.Drawing.Point(711, 38);
+            this.pbDev.Location = new System.Drawing.Point(720, 540);
             this.pbDev.Name = "pbDev";
             this.pbDev.Size = new System.Drawing.Size(100, 67);
             this.pbDev.TabIndex = 9;
             this.pbDev.TabStop = false;
+            this.pbDev.Click += new System.EventHandler(this.pbDev_Click);
             // 
             // frmMain
             // 
@@ -1225,7 +1278,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(824, 626);
             this.Controls.Add(this.pbDev);
-            this.Controls.Add(this.labDevinfo);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.labChoise);
             this.Controls.Add(this.tabContactInfos);
             this.Controls.Add(this.btnSave);
@@ -1364,7 +1417,7 @@
         private System.Windows.Forms.TextBox tbPLZFirm;
         private System.Windows.Forms.TextBox tbHouseNumberFirm;
         private System.Windows.Forms.TextBox tbStreetFirm;
-        private System.Windows.Forms.Label labDevinfo;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pbDev;
     }
 }
