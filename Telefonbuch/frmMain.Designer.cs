@@ -220,6 +220,7 @@
             // btnOpenPicture
             // 
             this.btnOpenPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenPicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenPicture.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenPicture.ImageIndex = 1;
             this.btnOpenPicture.ImageList = this.imageList1;
@@ -374,6 +375,7 @@
             // rbMale
             // 
             this.rbMale.AutoSize = true;
+            this.rbMale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbMale.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.rbMale.Location = new System.Drawing.Point(143, 27);
             this.rbMale.Name = "rbMale";
@@ -386,6 +388,7 @@
             // 
             this.rbFemale.AutoSize = true;
             this.rbFemale.Checked = true;
+            this.rbFemale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbFemale.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.rbFemale.Location = new System.Drawing.Point(7, 27);
             this.rbFemale.Name = "rbFemale";
