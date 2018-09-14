@@ -218,6 +218,7 @@ namespace Telefonbuch
             this.btnPreview.Visible = false;
             this.btnSave.Visible = false;
             this.labinfo.Visible = false;
+            this.labInfoText.Visible = true;
         }
 
         private void labback_Click(object sender, EventArgs e)
@@ -231,6 +232,7 @@ namespace Telefonbuch
             this.btnSave.Visible = true;
             this.labinfo.Visible = true;
             this.labback.Visible = false;
+            this.labInfoText.Visible = false;
         }
     }
 }

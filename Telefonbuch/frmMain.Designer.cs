@@ -128,6 +128,7 @@
             this.pbDev = new System.Windows.Forms.PictureBox();
             this.labinfo = new System.Windows.Forms.Label();
             this.labback = new System.Windows.Forms.Label();
+            this.labInfoText = new System.Windows.Forms.Label();
             this.tabContactInfos.SuspendLayout();
             this.TabGeneral.SuspendLayout();
             this.gbBirthday.SuspendLayout();
@@ -1244,9 +1245,10 @@
             // 
             // labChoise
             // 
-            this.labChoise.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labChoise.BackColor = System.Drawing.Color.Transparent;
+            this.labChoise.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labChoise.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labChoise.Location = new System.Drawing.Point(176, 12);
+            this.labChoise.Location = new System.Drawing.Point(177, 12);
             this.labChoise.Name = "labChoise";
             this.labChoise.Size = new System.Drawing.Size(474, 39);
             this.labChoise.TabIndex = 5;
@@ -1255,13 +1257,13 @@
             // labCopyright
             // 
             this.labCopyright.Cursor = System.Windows.Forms.Cursors.Help;
-            this.labCopyright.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCopyright.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCopyright.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labCopyright.Location = new System.Drawing.Point(590, 607);
+            this.labCopyright.Location = new System.Drawing.Point(630, 607);
             this.labCopyright.Name = "labCopyright";
-            this.labCopyright.Size = new System.Drawing.Size(230, 18);
+            this.labCopyright.Size = new System.Drawing.Size(188, 18);
             this.labCopyright.TabIndex = 8;
-            this.labCopyright.Text = "DevElement 2018 - Harald Rieder";
+            this.labCopyright.Text = "© DevElement 2018 - Harald Rieder";
             this.labCopyright.Click += new System.EventHandler(this.label12_Click);
             // 
             // pbDev
@@ -1302,6 +1304,21 @@
             this.labback.Visible = false;
             this.labback.Click += new System.EventHandler(this.labback_Click);
             // 
+            // labInfoText
+            // 
+            this.labInfoText.Cursor = System.Windows.Forms.Cursors.Help;
+            this.labInfoText.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labInfoText.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labInfoText.Location = new System.Drawing.Point(212, 82);
+            this.labInfoText.Name = "labInfoText";
+            this.labInfoText.Size = new System.Drawing.Size(439, 195);
+            this.labInfoText.TabIndex = 12;
+            this.labInfoText.Text = "DevElement is a new German company based in Breisach, operating in the interactiv" +
+    "e entertainment software industry and specialized in the development of high-qua" +
+    "lity 3-D video games for PC.";
+            this.labInfoText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labInfoText.Visible = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 18F);
@@ -1309,6 +1326,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(824, 626);
+            this.Controls.Add(this.labInfoText);
             this.Controls.Add(this.labback);
             this.Controls.Add(this.labinfo);
             this.Controls.Add(this.pbDev);
@@ -1456,6 +1474,7 @@
         private System.Windows.Forms.PictureBox pbDev;
         private System.Windows.Forms.Label labinfo;
         private System.Windows.Forms.Label labback;
+        private System.Windows.Forms.Label labInfoText;
     }
 }
 
