@@ -124,8 +124,10 @@
             this.tbMail2 = new System.Windows.Forms.TextBox();
             this.tbMail1 = new System.Windows.Forms.TextBox();
             this.labChoise = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.labCopyright = new System.Windows.Forms.Label();
             this.pbDev = new System.Windows.Forms.PictureBox();
+            this.labinfo = new System.Windows.Forms.Label();
+            this.labback = new System.Windows.Forms.Label();
             this.tabContactInfos.SuspendLayout();
             this.TabGeneral.SuspendLayout();
             this.gbBirthday.SuspendLayout();
@@ -1244,23 +1246,23 @@
             // 
             this.labChoise.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labChoise.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.labChoise.Location = new System.Drawing.Point(337, 12);
+            this.labChoise.Location = new System.Drawing.Point(176, 12);
             this.labChoise.Name = "labChoise";
             this.labChoise.Size = new System.Drawing.Size(474, 39);
             this.labChoise.TabIndex = 5;
             this.labChoise.Text = "Bitte wählen Sie \"Neuer Kontakt\" oder \"Kontakt öffnen\" aus!";
             // 
-            // label12
+            // labCopyright
             // 
-            this.label12.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label12.Location = new System.Drawing.Point(590, 607);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(230, 18);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "DevElement 2018 - Harald Rieder";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.labCopyright.Cursor = System.Windows.Forms.Cursors.Help;
+            this.labCopyright.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCopyright.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.labCopyright.Location = new System.Drawing.Point(590, 607);
+            this.labCopyright.Name = "labCopyright";
+            this.labCopyright.Size = new System.Drawing.Size(230, 18);
+            this.labCopyright.TabIndex = 8;
+            this.labCopyright.Text = "DevElement 2018 - Harald Rieder";
+            this.labCopyright.Click += new System.EventHandler(this.label12_Click);
             // 
             // pbDev
             // 
@@ -1273,6 +1275,33 @@
             this.pbDev.TabStop = false;
             this.pbDev.Click += new System.EventHandler(this.pbDev_Click);
             // 
+            // labinfo
+            // 
+            this.labinfo.AutoSize = true;
+            this.labinfo.Cursor = System.Windows.Forms.Cursors.Help;
+            this.labinfo.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labinfo.ForeColor = System.Drawing.Color.White;
+            this.labinfo.Location = new System.Drawing.Point(784, 9);
+            this.labinfo.Name = "labinfo";
+            this.labinfo.Size = new System.Drawing.Size(31, 15);
+            this.labinfo.TabIndex = 10;
+            this.labinfo.Text = "info";
+            this.labinfo.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // labback
+            // 
+            this.labback.AutoSize = true;
+            this.labback.Cursor = System.Windows.Forms.Cursors.Help;
+            this.labback.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labback.ForeColor = System.Drawing.Color.White;
+            this.labback.Location = new System.Drawing.Point(761, 9);
+            this.labback.Name = "labback";
+            this.labback.Size = new System.Drawing.Size(54, 15);
+            this.labback.TabIndex = 11;
+            this.labback.Text = "go back";
+            this.labback.Visible = false;
+            this.labback.Click += new System.EventHandler(this.labback_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 18F);
@@ -1280,8 +1309,10 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(824, 626);
+            this.Controls.Add(this.labback);
+            this.Controls.Add(this.labinfo);
             this.Controls.Add(this.pbDev);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.labCopyright);
             this.Controls.Add(this.labChoise);
             this.Controls.Add(this.tabContactInfos);
             this.Controls.Add(this.btnSave);
@@ -1321,6 +1352,7 @@
             this.gbMail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDev)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1420,8 +1452,10 @@
         private System.Windows.Forms.TextBox tbPLZFirm;
         private System.Windows.Forms.TextBox tbHouseNumberFirm;
         private System.Windows.Forms.TextBox tbStreetFirm;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label labCopyright;
         private System.Windows.Forms.PictureBox pbDev;
+        private System.Windows.Forms.Label labinfo;
+        private System.Windows.Forms.Label labback;
     }
 }
 

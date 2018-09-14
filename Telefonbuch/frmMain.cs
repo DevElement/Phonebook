@@ -41,7 +41,7 @@ namespace Telefonbuch
             this.btnPreview.Visible = true;
             this.btnSave.Visible = true;
             this.labChoise.Visible = false;
-            this.label12.Visible = false;
+            this.labCopyright.Visible = false;
             this.pbDev.Visible = false;
         }
 
@@ -204,6 +204,33 @@ namespace Telefonbuch
         private void label12_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.develement.de");
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            this.labback.Visible = true;
+            this.tabContactInfos.Visible = false;
+            this.labCopyright.Visible = true;
+            this.labChoise.Visible = false;
+            this.pbDev.Visible = true;
+            this.btnNew.Visible = false;
+            this.btnOpen.Visible = false;
+            this.btnPreview.Visible = false;
+            this.btnSave.Visible = false;
+            this.labinfo.Visible = false;
+        }
+
+        private void labback_Click(object sender, EventArgs e)
+        {
+            this.tabContactInfos.Visible = true;
+            this.labCopyright.Visible = false;
+            this.pbDev.Visible = false;
+            this.btnNew.Visible = true;
+            this.btnOpen.Visible = true;
+            this.btnPreview.Visible = true;
+            this.btnSave.Visible = true;
+            this.labinfo.Visible = true;
+            this.labback.Visible = false;
         }
     }
 }
